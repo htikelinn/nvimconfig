@@ -29,10 +29,11 @@ vim.opt.smartcase = true -- Case-sensitive if uppercase in search
 vim.opt.hlsearch = false -- Don't highlight search results
 vim.opt.incsearch = true -- Show matches as you type
 
+vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#143652" }) -- dark gray
 -- Visual Settings
 vim.opt.termguicolors = true -- Enable 24-bit colors
 vim.opt.signcolumn = "yes" -- Always show sign column
-vim.opt.colorcolumn = "100" -- Show column at 100 characters
+vim.opt.colorcolumn = "" -- Show column at 100 characters
 vim.opt.showmatch = true -- Highlight matching brackets
 vim.opt.matchtime = 2 -- How long to show matching bracket
 vim.opt.completeopt = "menuone,noinsert,noselect" -- Completion options

@@ -59,3 +59,12 @@ end, { desc = "Next todo comment" })
 vim.keymap.set("n", "[t", function()
 	require("todo-comments").jump_prev()
 end, { desc = "Previous todo comment" })
+
+-- Set column color key
+vim.keymap.set("n", "<leader>cc", function()
+	if vim.wo.colorcolumn == "" then
+		vim.wo.colorcolumn = "80"
+	else
+		vim.wo.colorcolumn = ""
+	end
+end, { desc = "Toggle colorcolumn" })
