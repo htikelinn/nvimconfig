@@ -45,6 +45,6 @@ require("lazy").setup({
 			"codeium",
 		},
 	},
-	install = { colorscheme = { "tokyonight" } }, --melange
+	install = { colorscheme = { "melange" } }, --melange,tokyonight
 	checker = { enabled = true },
 })
