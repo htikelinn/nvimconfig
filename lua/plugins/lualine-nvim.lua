@@ -10,7 +10,7 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		require("config.lualine.cosmicink") -- separate config file
+		require("config.lualine") -- separate config file
 	end,
 }
 -- INFO: defalt lualine theme

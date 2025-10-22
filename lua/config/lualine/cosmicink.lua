@@ -611,4 +611,3 @@ ins_right(create_separator("right"))
 
 ins_right(create_mode_based_component("progress", nil, colors.BG))
 require("lualine").setup(config)
-
