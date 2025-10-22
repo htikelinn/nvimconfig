@@ -37,6 +37,10 @@ local plugins_dir = "plugins"
 require("lazy").setup({
 	spec = {
 		{ import = plugins_dir },
+		{ import = "config.themes" },
+	},
+	defaults = {
+		lazy = true, -- load plugins lazily by default
 	},
 	rtp = {
 		disabled_plugins = {
@@ -45,6 +49,6 @@ require("lazy").setup({
 			"codeium",
 		},
 	},
-	install = { colorscheme = { "melange" } }, --melange,tokyonight
-	checker = { enabled = true },
+	-- install = { colorscheme = { "melange", "gruvbox", "tokyonight", "kanagawa", "solarized", "rose-pine" } }, --melange,tokyonight
+	checker = { enabled = true, notify = false },
 })
