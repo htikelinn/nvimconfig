@@ -10,7 +10,7 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		require("config.lualine.slanted-gaps") -- separate config file
+		require("config.lualine.cosmicink") -- separate config file
 	end,
 }
 -- INFO: defalt lualine theme
@@ -30,4 +30,3 @@ return {
 -- 	end,
 -- 	dependencies = { "nvim-tree/nvim-web-devicons" },
 -- }
-
