@@ -8,4 +8,6 @@ if not ok then
 	vim.notify("Theme '" .. active_theme .. "' not found!", vim.log.levels.WARN)
 	return {}
 end
+
 return { theme }
+

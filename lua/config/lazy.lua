@@ -39,9 +39,9 @@ require("lazy").setup({
 		{ import = plugins_dir },
 		{ import = "config.themes" },
 	},
-	defaults = {
-		lazy = true, -- load plugins lazily by default
-	},
+	-- defaults = {
+	-- 	lazy = true, -- load plugins lazily by default
+	-- },
 	rtp = {
 		disabled_plugins = {
 			"netrw",

@@ -1,7 +1,7 @@
 local lualine = require("lualine")
 
 -- Choose your theme by name (e.g. cosmicink, dracula)
-local theme_name = "evil_lualine"
+local theme_name = "cosmicink"
 
 -- Load your custom theme from configs/lualine/<theme_name>.lua
 local ok, theme = pcall(require, "config.lualine." .. theme_name)
