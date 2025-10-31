@@ -48,9 +48,43 @@ vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines and keep cursor position"
 vim.keymap.set("n", "<leader>rc", "<Cmd>e ~/.config/nvim/init.lua<CR>", { desc = "Edit config" })
 
 -- File Explorer
-vim.keymap.set("n", "<leader>m", "<Cmd>NvimTreeFocus<CR>", { desc = "Focus on File Explorer" })
+vim.keymap.set("n", "<leader>n", "<Cmd>NvimTreeFocus<CR>", { desc = "Focus on File Explorer" })
 vim.keymap.set("n", "<leader>e", "<Cmd>NvimTreeToggle<CR>", { desc = "Toggle File Explorer" })
 
+-- Dbee Kymaps
+vim.keymap.set("n", "<leader>db", ":Dbee<CR>", { desc = "Open Dbee UI" })
+
+-- Map the Rhythmbox-specific commands
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>mp",
+	"<cmd>MPlay rhythmbox<CR>",
+	{ noremap = true, silent = true, desc = "Toggle Play/Pause (Rhythmbox)" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>mn",
+	"<cmd>MNext rhythmbox<CR>",
+	{ noremap = true, silent = true, desc = "Next Track (Rhythmbox)" }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>mb",
+	"<cmd>MPrev rhythmbox<CR>",
+	{ noremap = true, silent = true, desc = "Previous Track (Rhythmbox)" }
+)
+
+-- Optional: Map a command to show what's currently playing
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ms",
+	"<cmd>MStatus rhythmbox<CR>",
+	{ noremap = true, silent = true, desc = "Show Status (Rhythmbox)" }
+)
+-- Oil keymaps
+vim.keymap.set("n", "<leader>do", function()
+	require("oil").open_float() -- Opens Oil in a floating window
+end, { desc = "Oil: Open Floating" })
 -- TODO Comments
 vim.keymap.set("n", "]t", function()
 	require("todo-comments").jump_next()
