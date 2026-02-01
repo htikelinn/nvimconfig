@@ -31,7 +31,7 @@ local bubbles_theme = {
 	},
 }
 
-require("lualine").setup({
+lualine.setup({
 	options = {
 		theme = bubbles_theme,
 		component_separators = "",

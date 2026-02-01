@@ -1,6 +1,6 @@
 require("lualine").setup({
 	options = {
-		theme = theme,
+		-- theme = theme,
 		icons_enabled = true,
 		globalstatus = true,
 		section_separators = { left = "", right = "" },
